@@ -6,7 +6,7 @@ def print_usage():
     print("Использование: python main.py <команда> <число>")
     print("Доступные команды:")
     print("  fib <N>   - вычислить N-е число Фибоначчи")
-    print("  pent <N>  - вычислить N-е Десятиугольное число")
+    print("  dec <N>  - вычислить N-е Десятиугольное число")
 
 def main():
     if len(sys.argv) != 3:
@@ -27,7 +27,7 @@ def main():
         if command == 'fib':
             result = calculate_fibonacci(n)
             print(f"Число Фибоначчи для N={n}: {result}")
-        elif command == 'pent':
+        elif command == 'dec':
             result = decagonal_number(n)
             print(f"Десятиугольное число для N={n}: {result}")
         else:
