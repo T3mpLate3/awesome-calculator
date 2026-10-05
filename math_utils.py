@@ -1,7 +1,7 @@
 def pentagonal_number(n: int) -> int:
     if n < 0:
         raise ValueError("Число n должно быть неотрицательным.")
-    return n * (3 * n - 1) // 2
+    return n * (8 * n - 6) // 2
 
 def fibonacci(n: int) -> int:
     if n < 0:
