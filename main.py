@@ -1,5 +1,5 @@
 import sys
-from math_utils import pentagonal_number
+from math_utils import decagonal_number
 from fibonacci_module import calculate_fibonacci
 
 def print_usage():
@@ -28,7 +28,7 @@ def main():
             result = calculate_fibonacci(n)
             print(f"Число Фибоначчи для N={n}: {result}")
         elif command == 'pent':
-            result = pentagonal_number(n)
+            result = decagonal_number(n)
             print(f"Десятиугольное число для N={n}: {result}")
         else:
             print(f"Ошибка: Неизвестная команда '{command}'.")
